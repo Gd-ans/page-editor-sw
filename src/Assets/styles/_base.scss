@@ -1,0 +1,182 @@
+ * {
+     margin: 0;
+     padding: 0;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     outline: none;
+     outline: 0;
+     -webkit-tap-highlight-color: transparent;
+     scroll-behavior: smooth;
+ }
+
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ // iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ //  ul,
+ //  li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ // embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+ }
+
+ video {
+     width: 100%;
+     min-width: 100%;
+     max-width: 100%;
+     height: auto;
+ }
+
+ a {
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .cursor {
+     cursor: pointer;
+ }
+
+ html * {
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     text-rendering: optimizeLegibility;
+     scroll-behavior: smooth;
+ }
+
+ html {
+     scroll-behavior: smooth;
+     text-rendering: optimizeLegibility !important;
+     -webkit-font-smoothing: antialiased !important;
+     -moz-osx-font-smoothing: grayscale !important;
+ }
+
+ i {
+     font-style: normal;
+     display: block;
+ }
+
+ body {
+     font-size: 16px;
+     font-weight: 400;
+     overflow-x: hidden;
+     letter-spacing: 0.0125em;
+ }
+
+ .DefaultBodyHeight {
+     min-height: calc(100vh - 100px);
+ }
+
+
+ *::-webkit-scrollbar {
+     height: 6px;
+     width: 6px;
+ }
+
+ *::-webkit-scrollbar-thumb {
+     border-radius: 20px;
+
+     @media (max-width:767px) {
+         background-color: transparent;
+         border-radius: 20px;
+         border: 0 solid transparent;
+     }
+ }
+
+ //  ul {
+ //      margin: 0;
+ //      padding: 0;
+
+ //      li {
+ //          list-style: none;
+ //      }
+ //  }
+
+ p {
+     overflow-wrap: break-word;
+     -ms-word-break: break-all;
+     word-break: break-all;
+     word-break: break-word;
+     line-height: 1.25;
+ }
+
+ input {
+     &:focus {
+         box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+     }
+ }
