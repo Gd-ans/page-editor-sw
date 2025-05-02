@@ -65,6 +65,28 @@ export default function A2ZGuide(props) {
         BulletItem1: data?.data[0]?.data[0]?.data[1]?.data[0].data[8],
         BulletItem2: data?.data[0]?.data[0]?.data[1]?.data[0].data[9],
         BulletItem3: data?.data[0]?.data[0]?.data[1]?.data[0].data[10],
+        StepTitle3: data?.data[0]?.data[0]?.data[1]?.data[0].data[11],
+        StepDescription3: data?.data[0]?.data[0]?.data[1]?.data[0].data[12],
+        BulletList2: data?.data[0]?.data[0]?.data[1]?.data[0].data[13],
+        BulletItem4: data?.data[0]?.data[0]?.data[1]?.data[0].data[14],
+        BulletItem5: data?.data[0]?.data[0]?.data[1]?.data[0].data[15],
+        StepTitle4: data?.data[0]?.data[0]?.data[1]?.data[0].data[16],
+        StepDescription4: data?.data[0]?.data[0]?.data[1]?.data[0].data[17],
+        BulletList3: data?.data[0]?.data[0]?.data[1]?.data[0].data[18],
+        BulletItem6: data?.data[0]?.data[0]?.data[1]?.data[0].data[19],
+        StepTitle5: data?.data[0]?.data[0]?.data[1]?.data[0].data[20],
+        StepDescription5: data?.data[0]?.data[0]?.data[1]?.data[0].data[21],
+        StepTitle6: data?.data[0]?.data[0]?.data[1]?.data[0].data[22],
+        StepDescription6: data?.data[0]?.data[0]?.data[1]?.data[0].data[23],
+        StepTitle7: data?.data[0]?.data[0]?.data[1]?.data[0].data[24],
+        StepDescription7: data?.data[0]?.data[0]?.data[1]?.data[0].data[25],
+        StepDescription8: data?.data[0]?.data[0]?.data[1]?.data[0].data[26],
+        StepTitle8: data?.data[0]?.data[0]?.data[1]?.data[0].data[27],
+        StepDescription8: data?.data[0]?.data[0]?.data[1]?.data[0].data[28],
+        StepDescription9: data?.data[0]?.data[0]?.data[1]?.data[0].data[29],
+        BulletList4: data?.data[0]?.data[0]?.data[1]?.data[0].data[30],
+        BulletItem7: data?.data[0]?.data[0]?.data[1]?.data[0].data[31],
+        BulletItem8: data?.data[0]?.data[0]?.data[1]?.data[0].data[32],
     }
     // const DataCheck = data?.data[0]?.data[0]?.data[1].data[0].data[0]
     console.log(style, "stylestylestyle");
@@ -114,49 +136,45 @@ export default function A2ZGuide(props) {
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>3. Set your Time Zone</StepTitle>
-                        <StepDescription>Customize your time settings:</StepDescription>
-                        <BulletList>
-                            <BulletItem>Choose 12-hour or 24-hour format</BulletItem>
-                            <BulletItem>Select your state from the dropdown menu</BulletItem>
+                        <Text DataCheck={style?.StepTitle3} />
+                        <Text DataCheck={style?.StepDescription3} />
+                        <BulletList item={style.BulletList2?.style}>
+                            <Text DataCheck={style?.BulletItem4} />
+                            <Text DataCheck={style?.BulletItem5} />
                         </BulletList>
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>4. Log In</StepTitle>
-                        <StepDescription>Enter your registered Email ID and Password. Tap "Forgot Password" to reset if needed.</StepDescription>
-                        <BulletList>
-                            <BulletItem>Forgot your password? Tap “Forgot Password” to reset it.</BulletItem>
+                        <Text DataCheck={style?.StepTitle4} />
+                        <Text DataCheck={style?.StepDescription4} />
+                        <BulletList item={style.BulletList3?.style}>
+                            <Text DataCheck={style?.BulletItem6} />
                         </BulletList>
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>• Secure Your Account with Two-Factor Authentication</StepTitle>
-                        <StepDescription>To enhance security, enter the verification code sent to your registered phone number.</StepDescription>
+                        <Text DataCheck={style?.StepTitle5} />
+                        <Text DataCheck={style?.StepDescription5} />
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>• Verify Store Information</StepTitle>
-                        <StepDescription>Verify your store details: Legal Business Entity Name, Doing Business As (DBA), Store Address, Business Type & Operating Hours</StepDescription>
+                        <Text DataCheck={style?.StepTitle6} />
+                        <Text DataCheck={style?.StepDescription6} />
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>• Create an Admin PIN</StepTitle>
-                        <StepDescription>
-                            Set up a 4-digit PIN for secure access. This PIN will be required for important administrative actions.
-                        </StepDescription>
-                        <StepDescription>
-                            Re-enter your Admin PIN to confirm.
-                        </StepDescription>
+                        <Text DataCheck={style?.StepTitle7} />
+                        <Text DataCheck={style?.StepDescription7} />
+                        <Text DataCheck={style?.StepDescription8} />
                     </Section>
 
                     <Section item={style?.Section?.style}>
-                        <StepTitle>• Accept Terms</StepTitle>
-                        <StepDescription>Read the Terms of Service and tap “Agree and Continue.”</StepDescription>
-                        <StepDescription>A pop-up will confirm that your subscription is being activated. Once completed, you’ll see a Welcome Message with two options:</StepDescription>
-                        <BulletList>
-                            <BulletItem>Get Started Now</BulletItem>
-                            <BulletItem>View a Tutorial</BulletItem>
+                        <Text DataCheck={style?.StepTitle8} />
+                        <Text DataCheck={style?.StepDescription8} />
+                        <Text DataCheck={style?.StepDescription9} />
+                        <BulletList item={style.BulletList4?.style}>
+                            <Text DataCheck={style?.BulletItem7} />
+                            <Text DataCheck={style?.BulletItem8} />
                         </BulletList>
                     </Section>
 

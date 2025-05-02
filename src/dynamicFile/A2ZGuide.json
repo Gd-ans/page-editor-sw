@@ -1690,563 +1690,1840 @@
                                             ]
                                         },
                                         {
-                                            "type": "section",
-                                            "children": [
+                                            "type": "heading",
+                                            "data": [
                                                 {
-                                                    "type": "heading",
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "2. Connect to the Internet",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Choose how your POS system will connect to the internet:",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ul",
-                                                    "children": [
-                                                        {
-                                                            "type": "li",
+                                                            "type": "p",
                                                             "children": [
                                                                 {
-                                                                    "text": "Ethernet (Wired Connection)",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
+                                                                    "lineHeight": "normal",
+                                                                    "text": "3. Set your Time Zone"
                                                                 }
                                                             ],
                                                             "style": {
                                                                 "desktop": {
-                                                                    "lineHeight": "28.5px"
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "type": "li",
-                                                            "children": [
-                                                                {
-                                                                    "text": "Wi-Fi (Wireless Connection)",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
-                                                                }
-                                                            ],
-                                                            "style": {
-                                                                "desktop": {
-                                                                    "lineHeight": "28.5px"
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "type": "li",
-                                                            "children": [
-                                                                {
-                                                                    "text": "Mobile Data or Tethering",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
-                                                                }
-                                                            ],
-                                                            "style": {
-                                                                "desktop": {
-                                                                    "lineHeight": "28.5px"
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
                                                                 }
                                                             }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "6px 0 0 18px",
-                                                            "fontSize": "14px",
-                                                            "padding": "0"
-                                                        }
-                                                    }
+                                                    ]
                                                 }
-                                            ],
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Customize your time settings:"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "unorderedList",
                                             "style": {
                                                 "desktop": {
-                                                    "marginBottom": "20px"
+                                                    "padding": {
+                                                        "paddingTop": "0",
+                                                        "paddingRight": "0",
+                                                        "paddingBottom": "0",
+                                                        "paddingLeft": "0"
+                                                    },
+                                                    "margin": {
+                                                        "marginTop": "6px",
+                                                        "marginRight": "",
+                                                        "marginBottom": "",
+                                                        "marginLeft": "0"
+                                                    }
                                                 }
                                             }
                                         },
                                         {
-                                            "type": "section",
-                                            "children": [
+                                            "type": "list-item",
+                                            "data": [
                                                 {
-                                                    "type": "heading",
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "3. Set your Time Zone",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Customize your time settings:",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ul",
-                                                    "children": [
-                                                        {
-                                                            "type": "li",
+                                                            "type": "list-item",
                                                             "children": [
                                                                 {
-                                                                    "text": "Choose 12-hour or 24-hour format",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Choose 12-hour or 24-hour format"
                                                                 }
                                                             ],
                                                             "style": {
                                                                 "desktop": {
-                                                                    "lineHeight": "28.5px"
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
                                                                 }
                                                             }
-                                                        },
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "list-item",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
                                                         {
-                                                            "type": "li",
+                                                            "type": "list-item",
                                                             "children": [
                                                                 {
-                                                                    "text": "Select your state from the dropdown menu",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Select your state from the dropdown menu"
                                                                 }
                                                             ],
                                                             "style": {
                                                                 "desktop": {
-                                                                    "lineHeight": "28.5px"
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
                                                                 }
                                                             }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "6px 0 0 18px",
-                                                            "fontSize": "14px",
-                                                            "padding": "0"
-                                                        }
-                                                    }
+                                                    ]
                                                 }
-                                            ],
-                                            "style": {
-                                                "desktop": {
-                                                    "marginBottom": "20px"
-                                                }
-                                            }
+                                            ]
                                         },
                                         {
-                                            "type": "section",
-                                            "children": [
+                                            "type": "heading",
+                                            "data": [
                                                 {
-                                                    "type": "heading",
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "4. Log In",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Enter your registered Email ID and Password. Tap \"Forgot Password\" to reset if needed.",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ul",
-                                                    "children": [
-                                                        {
-                                                            "type": "li",
+                                                            "type": "p",
                                                             "children": [
                                                                 {
-                                                                    "text": "Forgot your password? Tap \"Forgot Password\" to reset it.",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
+                                                                    "lineHeight": "normal",
+                                                                    "text": "4. Log In"
                                                                 }
                                                             ],
                                                             "style": {
                                                                 "desktop": {
-                                                                    "lineHeight": "28.5px"
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
                                                                 }
                                                             }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "6px 0 0 18px",
-                                                            "fontSize": "14px",
-                                                            "padding": "0"
-                                                        }
-                                                    }
+                                                    ]
                                                 }
-                                            ],
-                                            "style": {
-                                                "desktop": {
-                                                    "marginBottom": "20px"
-                                                }
-                                            }
+                                            ]
                                         },
                                         {
-                                            "type": "section",
-                                            "children": [
+                                            "type": "heading",
+                                            "data": [
                                                 {
-                                                    "type": "heading",
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "• Secure Your Account with Two-Factor Authentication",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "To enhance security, enter the verification code sent to your registered phone number.",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                }
-                                            ],
-                                            "style": {
-                                                "desktop": {
-                                                    "marginBottom": "20px"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type": "section",
-                                            "children": [
-                                                {
-                                                    "type": "heading",
-                                                    "children": [
-                                                        {
-                                                            "text": "• Verify Store Information",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Verify your store details: Legal Business Entity Name, Doing Business As (DBA), Store Address, Business Type & Operating Hours",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                }
-                                            ],
-                                            "style": {
-                                                "desktop": {
-                                                    "marginBottom": "20px"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type": "section",
-                                            "children": [
-                                                {
-                                                    "type": "heading",
-                                                    "children": [
-                                                        {
-                                                            "text": "• Create an Admin PIN",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Set up a 4-digit PIN for secure access. This PIN will be required for important administrative actions.",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Re-enter your Admin PIN to confirm.",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                }
-                                            ],
-                                            "style": {
-                                                "desktop": {
-                                                    "marginBottom": "20px"
-                                                }
-                                            }
-                                        },
-                                        {
-                                            "type": "section",
-                                            "children": [
-                                                {
-                                                    "type": "heading",
-                                                    "children": [
-                                                        {
-                                                            "text": "• Accept Terms",
-                                                            "bold": true,
-                                                            "fontSize": "16px",
-                                                            "color": "#1B202A"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "marginBottom": "4px",
-                                                            "lineHeight": "28.5px"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "Read the Terms of Service and tap \"Agree and Continue.\"",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "A pop-up will confirm that your subscription is being activated. Once completed, you'll see a Welcome Message with two options:",
-                                                            "color": "#787486",
-                                                            "fontSize": "14px"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "lineHeight": "28.5px",
-                                                            "margin": "4px 0 0 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "ul",
-                                                    "children": [
-                                                        {
-                                                            "type": "li",
+                                                            "type": "p",
                                                             "children": [
                                                                 {
-                                                                    "text": "Get Started Now",
-                                                                    "color": "#787486",
-                                                                    "fontSize": "14px"
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Enter your registered Email ID and Password. Tap \"Forgot Password\" to reset if needed."
                                                                 }
                                                             ],
                                                             "style": {
                                                                 "desktop": {
-                                                                    "lineHeight": "28.5px"
-                                                                }
-                                                            }
-                                                        },
-                                                        {
-                                                            "type": "li",
-                                                            "children": [
-                                                                {
-                                                                    "text": "View a Tutorial",
+                                                                    "fontStyle": "",
                                                                     "color": "#787486",
-                                                                    "fontSize": "14px"
-                                                                }
-                                                            ],
-                                                            "style": {
-                                                                "desktop": {
-                                                                    "lineHeight": "28.5px"
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
                                                                 }
                                                             }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "6px 0 0 18px",
-                                                            "fontSize": "14px",
-                                                            "padding": "0"
-                                                        }
-                                                    }
+                                                    ]
                                                 }
-                                            ],
+                                            ]
+                                        },
+                                        {
+                                            "type": "unorderedList",
                                             "style": {
                                                 "desktop": {
-                                                    "marginBottom": "20px"
+                                                    "padding": {
+                                                        "paddingTop": "0",
+                                                        "paddingRight": "0",
+                                                        "paddingBottom": "0",
+                                                        "paddingLeft": "0"
+                                                    },
+                                                    "margin": {
+                                                        "marginTop": "6px",
+                                                        "marginRight": "",
+                                                        "marginBottom": "",
+                                                        "marginLeft": "0"
+                                                    }
                                                 }
                                             }
                                         },
                                         {
-                                            "type": "helpBox",
+                                            "type": "list-item",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "list-item",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Forgot your password? Tap “Forgot Password” to reset it."
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "• Secure Your Account with Two-Factor Authentication"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "To enhance security, enter the verification code sent to your registered phone number."
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "• Verify Store Information"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Verify your store details: Legal Business Entity Name, Doing Business As (DBA), Store Address, Business Type & Operating Hours"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "• Create an Admin PIN"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Set up a 4-digit PIN for secure access. This PIN will be required for important administrative actions."
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Re-enter your Admin PIN to confirm."
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "• Accept Terms"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#1B202A",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "600",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginBottom": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Read the Terms of Service and tap “Agree and Continue.”"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "A pop-up will confirm that your subscription is being activated. Once completed, you’ll see a Welcome Message with two options:"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "marginTop": "4px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "unorderedList",
                                             "style": {
                                                 "desktop": {
-                                                    "padding": "20px 32px",
-                                                    "borderRadius": "8px",
-                                                    "background": "rgba(116, 126, 209, 0.08)"
+                                                    "padding": {
+                                                        "paddingTop": "0",
+                                                        "paddingRight": "0",
+                                                        "paddingBottom": "0",
+                                                        "paddingLeft": "0"
+                                                    },
+                                                    "margin": {
+                                                        "marginTop": "6px",
+                                                        "marginRight": "",
+                                                        "marginBottom": "",
+                                                        "marginLeft": "0"
+                                                    }
                                                 }
-                                            },
-                                            "children": [
+                                            }
+                                        },
+                                        {
+                                            "type": "list-item",
+                                            "data": [
                                                 {
-                                                    "type": "heading",
-                                                    "level": 3,
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "Need more help?",
-                                                            "bold": true,
-                                                            "fontSize": "24px"
+                                                            "type": "list-item",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Get Started Now"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "0 0 12px 0"
-                                                        }
-                                                    }
-                                                },
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "list-item",
+                                            "data": [
                                                 {
-                                                    "type": "paragraph",
+                                                    "type": "alignLeft",
                                                     "children": [
                                                         {
-                                                            "text": "Post your inquiry on the given contact number or email. Our Company representative will contact you soon.",
-                                                            "fontSize": "16px",
-                                                            "lineHeight": "24px"
+                                                            "type": "list-item",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "View a Tutorial"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "fontStyle": "",
+                                                                    "color": "#787486",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "14px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "28.5px",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginRight": "0",
+                                                                        "marginBottom": "0",
+                                                                        "marginLeft": "0"
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "",
+                                                                    "position": {
+                                                                        "position": "",
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "",
+                                                                        "bottom": "",
+                                                                        "left": "",
+                                                                        "right": ""
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "",
+                                                                        "marginRight": "",
+                                                                        "marginBottom": "",
+                                                                        "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
                                                         }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "margin": "0 0 20px 0"
-                                                        }
-                                                    }
-                                                },
-                                                {
-                                                    "type": "paragraph",
-                                                    "children": [
-                                                        {
-                                                            "text": "getsupport@gmail.com",
-                                                            "fontSize": "18px",
-                                                            "color": "#646464"
-                                                        }
-                                                    ],
-                                                    "style": {
-                                                        "desktop": {
-                                                            "display": "flex",
-                                                            "alignItems": "center",
-                                                            "marginTop": "8px"
-                                                        }
-                                                    }
+                                                    ]
                                                 }
                                             ]
                                         }

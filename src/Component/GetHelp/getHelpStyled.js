@@ -132,7 +132,7 @@ export const BulletList = styled.ul`
   margin-top: ${({ item }) => item?.desktop?.margin?.marginTop};
   margin-bottom: ${({ item }) => item?.desktop?.margin?.marginBottom};
   margin-left: ${({ item }) => item?.desktop?.margin?.marginLeft};
-  margin-left: 18px;
+  /* margin-left: 18px; */
   margin-right: ${({ item }) => item?.desktop?.margin?.marginRight};  
   margin-top: ${({ item }) => item?.desktop?.margin?.paddingTop};
   padding-bottom: ${({ item }) => item?.desktop?.margin?.paddingBottom};
