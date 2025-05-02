@@ -131,13 +131,12 @@ export const StepDescription = styled.p`
 export const BulletList = styled.ul`
   margin-top: ${({ item }) => item?.desktop?.margin?.marginTop};
   margin-bottom: ${({ item }) => item?.desktop?.margin?.marginBottom};
-  margin-left: ${({ item }) => item?.desktop?.margin?.marginLeft};
-  /* margin-left: 18px; */
+  margin-left: ${({ item }) => item?.desktop?.margin?.marginLeft}; 
   margin-right: ${({ item }) => item?.desktop?.margin?.marginRight};  
-  margin-top: ${({ item }) => item?.desktop?.margin?.paddingTop};
-  padding-bottom: ${({ item }) => item?.desktop?.margin?.paddingBottom};
-  padding-left: ${({ item }) => item?.desktop?.margin?.paddingLeft};
-  padding-right: ${({ item }) => item?.desktop?.margin?.paddingRight}; 
+  padding-top: ${({ item }) => item?.desktop?.padding?.paddingTop};
+  padding-bottom: ${({ item }) => item?.desktop?.padding?.paddingBottom};
+  padding-left: ${({ item }) => item?.desktop?.padding?.paddingLeft};
+  padding-right: ${({ item }) => item?.desktop?.padding?.paddingRight}; 
 `;
 
 
@@ -149,10 +148,13 @@ export const BulletItem = styled.li`
   font-weight: 400;
   line-height: 28.5px;
 `;
-export const HelpBox = styled.div`
-  padding: 20px 32px;
-  border-radius: 8px;
-  background: rgba(116, 126, 209, 0.08);
+export const HelpBox = styled.div` 
+  padding-top: ${({ item }) => item?.desktop?.padding?.paddingTop};
+  padding-bottom: ${({ item }) => item?.desktop?.padding?.paddingBottom};
+  padding-left: ${({ item }) => item?.desktop?.padding?.paddingLeft};
+  padding-right: ${({ item }) => item?.desktop?.padding?.paddingRight}; 
+  border-radius: ${({ item }) => item?.desktop?.borderRadius}; 
+  background-color: ${({ item }) => item?.desktop?.backgroundColor}; 
 `;
 
 export const HelpBoxTitle = styled.p`
@@ -173,16 +175,14 @@ export const HelpBoxText = styled.p`
 `;
 
 export const EmailRow = styled.div`
-  display: flex;
-  align-items: center;
-  margin-top: 8px;
-  color: #333;
+ display:${({ item }) => item?.desktop?.display} ;  
+  align-items:${({ item }) => item?.desktop?.alignItem}; 
+  margin-top: ${({ item }) => item?.desktop?.margin?.marginTop}; 
 
   .envolev-icon {
-    font-size: 20px;
-    flex-shrink: 0;
-    aspect-ratio: 1/1;
-    fill: #747ED1;
+    font-size: ${({ item2 }) => item2?.desktop?.fontSize}; 
+    aspect-ratio:${({ item2 }) => item2?.desktop?.aspectRatio}; 
+    fill: ${({ item2 }) => item2?.desktop?.fill}; 
   }
 `;
 

@@ -836,7 +836,7 @@
                                     "componentRender": "contentWrap",
                                     "style": {
                                         "desktop": {
-                                            "maxHeight": "calc(100vh - 80px)",
+                                            "maxHeight": "calc(100vh - 124px)",
                                             "overflowY": "auto",
                                             "padding": {
                                                 "paddingTop": "0",
@@ -3519,6 +3519,336 @@
                                                                         "marginRight": "",
                                                                         "marginBottom": "",
                                                                         "marginLeft": ""
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "section",
+                                            "style": {
+                                                "desktop": {
+                                                    "borderRadius": "8px",
+                                                    "padding": {
+                                                        "paddingTop": "20px",
+                                                        "paddingRight": "32px",
+                                                        "paddingBottom": "20px",
+                                                        "paddingLeft": "32px"
+                                                    },
+                                                    "backgroundColor": "rgba(116, 126, 209, 0.08)"
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "heading",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Need more help?"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "color": "#000",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "24px",
+                                                                    "fontWeight": "700",
+                                                                    "marginBottom": "12px",
+                                                                    "fontStyle": "",
+                                                                    "lineHeight": "",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "center",
+                                                                    "position": {
+                                                                        "position": "relative",
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "16px",
+                                                                        "marginLeft": "0px"
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "30px",
+                                                                        "marginLeft": "0px"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "normal",
+                                                                    "text": "Post your inquiry on the given contact number or email. Our Company representative will contact you soon."
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "color": "#000",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "16px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "24px",
+                                                                    "marginBottom": "20px",
+                                                                    "fontStyle": "",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "center",
+                                                                    "position": {
+                                                                        "position": "relative",
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "16px",
+                                                                        "marginLeft": "0px"
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "30px",
+                                                                        "marginLeft": "0px"
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "section",
+                                            "name": "EmailRow",
+                                            "style": {
+                                                "desktop": {
+                                                    "display": "flex",
+                                                    "alignItems": "center",
+                                                    "padding": {
+                                                        "paddingTop": "0",
+                                                        "paddingRight": "0",
+                                                        "paddingBottom": "0",
+                                                        "paddingLeft": "0"
+                                                    },
+                                                    "margin": {
+                                                        "marginTop": "8px",
+                                                        "marginRight": "0",
+                                                        "marginBottom": "0",
+                                                        "marginLeft": "0"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "icon",
+                                            "name": "FaEnvelope",
+                                            "style": {
+                                                "desktop": {
+                                                    "display": "flex",
+                                                    "alignItems": "center",
+                                                    "fontSize": "20px",
+                                                    "aspectRatio": "1/1",
+                                                    "fill": " #747ED1",
+                                                    "padding": {
+                                                        "paddingTop": "0",
+                                                        "paddingRight": "0",
+                                                        "paddingBottom": "0",
+                                                        "paddingLeft": "0"
+                                                    },
+                                                    "margin": {
+                                                        "marginTop": "0",
+                                                        "marginRight": "0",
+                                                        "marginBottom": "0",
+                                                        "marginLeft": "0"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        {
+                                            "type": "paragraph",
+                                            "name": "EmailText",
+                                            "data": [
+                                                {
+                                                    "type": "alignLeft",
+                                                    "children": [
+                                                        {
+                                                            "type": "p",
+                                                            "children": [
+                                                                {
+                                                                    "lineHeight": "18px",
+                                                                    "text": "getsupport@gmail.com"
+                                                                }
+                                                            ],
+                                                            "style": {
+                                                                "desktop": {
+                                                                    "color": "#646464",
+                                                                    "fontFamily": "Nunito Sans",
+                                                                    "fontSize": "18px",
+                                                                    "fontWeight": "400",
+                                                                    "lineHeight": "18px",
+                                                                    "marginLeft": "8px",
+                                                                    "textAlign": "center",
+                                                                    "padding": {
+                                                                        "paddingTop": "",
+                                                                        "paddingRight": "",
+                                                                        "paddingBottom": "",
+                                                                        "paddingLeft": ""
+                                                                    }
+                                                                },
+                                                                "tablet": {
+                                                                    "color": "",
+                                                                    "fontSize": "",
+                                                                    "fontWeight": "",
+                                                                    "lineHeight": "",
+                                                                    "backgroundColor": "",
+                                                                    "textAlign": "center",
+                                                                    "position": {
+                                                                        "position": "relative",
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "16px",
+                                                                        "marginLeft": "0px"
+                                                                    }
+                                                                },
+                                                                "mobile": {
+                                                                    "color": "",
+                                                                    "fontsize": "",
+                                                                    "fontweight": "",
+                                                                    "lineheight": "",
+                                                                    "backgroundcolor": "",
+                                                                    "textalign": "",
+                                                                    "position": {
+                                                                        "top": "0px",
+                                                                        "bottom": "0px",
+                                                                        "left": "0px",
+                                                                        "right": "0px"
+                                                                    },
+                                                                    "padding": {
+                                                                        "paddingTop": "0px",
+                                                                        "paddingRight": "0px",
+                                                                        "paddingBottom": "0px",
+                                                                        "paddingLeft": "0px"
+                                                                    },
+                                                                    "margin": {
+                                                                        "marginTop": "0px",
+                                                                        "marginRight": "0px",
+                                                                        "marginBottom": "30px",
+                                                                        "marginLeft": "0px"
                                                                     }
                                                                 }
                                                             }

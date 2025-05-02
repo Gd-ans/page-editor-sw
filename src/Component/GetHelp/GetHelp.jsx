@@ -87,6 +87,12 @@ export default function A2ZGuide(props) {
         BulletList4: data?.data[0]?.data[0]?.data[1]?.data[0].data[30],
         BulletItem7: data?.data[0]?.data[0]?.data[1]?.data[0].data[31],
         BulletItem8: data?.data[0]?.data[0]?.data[1]?.data[0].data[32],
+        HelpBox: data?.data[0]?.data[0]?.data[1]?.data[0].data[33],
+        HelpBoxTitle: data?.data[0]?.data[0]?.data[1]?.data[0].data[34],
+        HelpBoxDesc: data?.data[0]?.data[0]?.data[1]?.data[0].data[35],
+        EmailRow: data?.data[0]?.data[0]?.data[1]?.data[0].data[36],
+        FaEnvelope: data?.data[0]?.data[0]?.data[1]?.data[0].data[37],
+        EmailText: data?.data[0]?.data[0]?.data[1]?.data[0].data[38],
     }
     // const DataCheck = data?.data[0]?.data[0]?.data[1].data[0].data[0]
     console.log(style, "stylestylestyle");
@@ -105,7 +111,6 @@ export default function A2ZGuide(props) {
 
             <MainContent>
                 <Text DataCheck={style.Title} />
-                {/* <Title>Getting Started with A2Z POS: A Beginner's Guide</Title> */}
                 <ContentWrap item={style?.ContentWrap?.style}>
                     <VideoContainer onClick={handleVideoClick}>
                         <VideoPlayer
@@ -178,14 +183,13 @@ export default function A2ZGuide(props) {
                         </BulletList>
                     </Section>
 
-                    <HelpBox>
-                        <HelpBoxTitle>Need more help?</HelpBoxTitle>
-                        <HelpBoxText>
-                            Post your inquiry on the given contact number or email. Our Company representative will contact you soon.
-                        </HelpBoxText>
-                        <EmailRow>
+                    <HelpBox item={style?.HelpBox?.style}>
+                        <Text DataCheck={style?.HelpBoxTitle} />
+                        <Text DataCheck={style?.HelpBoxDesc} />
+                        <EmailRow item={style?.EmailRow?.style} item2={style?.FaEnvelope?.style}>
                             <FaEnvelope className='envolev-icon' />
-                            <EmailText>getsupport@gmail.com</EmailText>
+                            <Text DataCheck={style?.EmailText} />
+                            {/* <EmailText item={style?.EmailText?.style}  >getsupport@gmail.com</EmailText> */}
                         </EmailRow>
                     </HelpBox>
                 </ContentWrap>
