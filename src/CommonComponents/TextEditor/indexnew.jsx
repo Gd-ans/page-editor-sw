@@ -32,7 +32,7 @@ import ColorPickerTextEditor from './ColorPickerTextEditor.jsx';
 import { insertLink } from '../../utils/link.js';
 import LineHeightDropDown from './LineHeight.jsx';
 import { useDebounceFunction } from '../../utils/debounce.js';
-import { clearSelectedTextItem, setSelectedTextItem } from '../../store/slices/selectedTextSlice.js';
+import { setSelectedTextItem } from '../../store/slices/selectedTextSlice.js';
 
 const ParentTextEditorWraper = styled.div`
   position: relative;
@@ -218,8 +218,6 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
         handleSave();
       }
       setEditTextButton(false);
-      // Clear the selected text item from the Redux store
-      dispatch(clearSelectedTextItem());
     }
   });
 
@@ -291,7 +289,6 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
   const handleSave = (MegaValue) => {
     const updatedData = MegaValue ? MegaValue : value;
     // Handle save logic if needed
-    console.log(updatedData, "SAfsdgsg")
   };
 
   const LinkSubmit = (action, pathname, urlSlug, email, telnumber, webUrl, file, actionRandom) => {
@@ -387,7 +384,7 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     }
   }, [editTextButton]);
 
-  console.log(randomKey, 'Selected Text xIxtem:s', selectedTextItem);
+  console.log(randomKey, 'Selected Text xIxtem:', selectedTextItem);
 
   return (
     <>

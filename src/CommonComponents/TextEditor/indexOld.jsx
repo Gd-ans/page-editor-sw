@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import styled from 'styled-components';
-import { useDispatch, useSelector } from 'react-redux';
+// import { useDispatch } from 'react-redux';
+// import { updateTextEditorData } from '../../store/Slices/textEditorSlice.js';
 import {
   FaBold,
   FaItalic,
@@ -32,8 +33,6 @@ import ColorPickerTextEditor from './ColorPickerTextEditor.jsx';
 import { insertLink } from '../../utils/link.js';
 import LineHeightDropDown from './LineHeight.jsx';
 import { useDebounceFunction } from '../../utils/debounce.js';
-import { clearSelectedTextItem, setSelectedTextItem } from '../../store/slices/selectedTextSlice.js';
-
 const ParentTextEditorWraper = styled.div`
   position: relative;
   display: inline-block;
@@ -147,10 +146,7 @@ const TextEditorWrapUL = styled.div`
 `;
 
 const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, sliderId }) => {
-  const dispatch = useDispatch();
-  const selectedTextItem = useSelector((state) => state.selectedText.selectedTextItem);
-
-  // Log or use the selected text item JSON object
+  // const dispatch = useDispatch();
 
   const Element = (props) => {
     return getBlock(props);
@@ -218,15 +214,11 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
         handleSave();
       }
       setEditTextButton(false);
-      // Clear the selected text item from the Redux store
-      dispatch(clearSelectedTextItem());
     }
   });
 
   const handleSelection = () => {
     setSelectedElement(index);
-    // Dispatch the JSON data of the selected text item to the Redux store
-    dispatch(setSelectedTextItem(data));
   };
 
   const renderElement = useCallback((props) => <Element {...props} />, []);
@@ -275,8 +267,10 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
   };
 
   const TextActionHandle = () => {
+    // TextEditorLinkref.current.open();
+    // setLinkPoUpOpen(true); 
     const url = prompt("Enter a URL");
-    insertLink(editor, url);
+    insertLink(editor, url); // will be implemented later 
   };
 
   const TextActionCloseHandle = () => {
@@ -290,8 +284,8 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
 
   const handleSave = (MegaValue) => {
     const updatedData = MegaValue ? MegaValue : value;
-    // Handle save logic if needed
-    console.log(updatedData, "SAfsdgsg")
+    // console.log(MegaValue, value, "zfgdhdff")
+    // dispatch(updateTextEditorData(updatedData));  
   };
 
   const LinkSubmit = (action, pathname, urlSlug, email, telnumber, webUrl, file, actionRandom) => {
@@ -359,7 +353,7 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     Transforms.select(editor, range);
   }, [editor]);
 
-  const mainDiv = document.querySelector('#root');
+  const mainDiv = document.querySelector('.Theme2-style')
   const [popupPosition, setPopupPosition] = useState({ top: '-60px' });
   const popupRef = useRef(null);
   const [positionDown, setPositionDown] = useState(false);
@@ -387,7 +381,6 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     }
   }, [editTextButton]);
 
-  console.log(randomKey, 'Selected Text xIxtem:s', selectedTextItem);
 
   return (
     <>
@@ -509,6 +502,7 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
             />
           )}
         </ParentTextEditorWraper>
+
       </SlateContainer>
     </>
   );

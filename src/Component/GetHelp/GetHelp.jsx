@@ -25,10 +25,15 @@ import {
 } from "./getHelpStyled.js";
 import Text from '../../Element/TextElement/Text.jsx';
 import ImageEditor from '../../CommonComponents/ImageEditor/index.jsx';
+import { useSelector } from 'react-redux';
 
 
 
 export default function A2ZGuide(props) {
+    const selectedTextItem = useSelector((state) => state.selectedText.selectedTextItem);
+
+    // Log or use the selected text item JSON object
+    console.log('Selected Text Item:', selectedTextItem);
     const data = props?.data
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -98,10 +103,6 @@ export default function A2ZGuide(props) {
         EmailText: GridRight?.data[0].custom__section[38],
         videoData: GridRight?.data[0]?.data[0],
     }
-    // const DataCheck = data?.data[0]?.data[0]?.data[1].data[0].data[0]
-    console.log(style?.videoData, "stylestylestyle");
-
-
     return (
         <Container item={style.Container}>
             <Sidebar item={style.Sidebar}>
@@ -116,7 +117,7 @@ export default function A2ZGuide(props) {
             <MainContent>
                 <Text DataCheck={style.Title} />
                 <ContentWrap item={style?.ContentWrap?.style}>
-                    <ImageEditor>
+                    <ImageEditor data={style?.videoData}>
                         <VideoContainer onClick={handleVideoClick}>
                             <VideoPlayer
                                 ref={videoRef}

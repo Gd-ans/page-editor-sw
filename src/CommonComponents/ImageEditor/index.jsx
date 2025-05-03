@@ -1,6 +1,8 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components';
 import EditMediaPopUp from './EditMediaPopUp/EditMediaPopUp';
+import { useDispatch } from 'react-redux';
+import { clearSelectedTextItem, setSelectedTextItem } from '../../store/slices/selectedTextSlice';
 const MainImageEditor = styled.div`
     position: relative;
     min-width: 1px;
@@ -58,14 +60,44 @@ const BtnEditMedia = styled.button`
 const MainBtnEdit = styled.div`
 position: relative;
 `;
-const ImageEditor = ({ children, index }) => {
+const ImageEditor = ({ children, index, data }) => {
+    const dispatch = useDispatch()
     const selectedElementRef = useRef(null)
     const EditMedia = useRef();
     const [selectedElement, setSelectedElement] = useState(false);
     const [editMedia, setEditMedia] = useState(false);
     const handleSelection = () => {
         setSelectedElement(true)
+        dispatch(setSelectedTextItem(data));
     }
+
+
+    const useOutsideClick = (ref, callback) => {
+        const handleClick = (event) => {
+            if (ref.current && !ref.current.contains(event.target)) {
+                callback();
+            }
+        };
+
+        useEffect(() => {
+            document.addEventListener('mousedown', handleClick);
+            return () => {
+                document.removeEventListener('mousedown', handleClick);
+            };
+        }, [ref, callback]);
+    };
+
+    useOutsideClick(selectedElementRef, () => {
+        if (selectedElement !== '') {
+            setSelectedElement('');
+            setEditMedia(false);
+            // Clear the selected text item from the Redux store
+            dispatch(clearSelectedTextItem());
+        }
+    });
+
+
+    console.log(data, "ASfsdf")
     return (
         <React.Fragment>
             <MainImageEditor onClick={() => handleSelection()} ref={selectedElementRef}>
