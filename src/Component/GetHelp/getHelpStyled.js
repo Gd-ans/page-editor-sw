@@ -44,7 +44,9 @@ export const SidebarItem = styled.div`
   margin-bottom: 8px;
 `;
 
-export const MainContent = styled.div``;
+export const MainContent = styled.div`
+  flex-grow: 1;
+`;
 
 export const ContentWrap = styled.div`
   max-height: ${({ item }) => item?.desktop?.maxHeight}; ;
@@ -89,9 +91,9 @@ export const VideoOverlay = styled.div`
   align-items: center;
   justify-content: center;
 
-  &:hover {
+  /* &:hover {
     background-color: rgba(0, 0, 0, 0.5);
-  }
+  } */
 `;
 
 export const VideoIcon = styled(FaCirclePlay)`

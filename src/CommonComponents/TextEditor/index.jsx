@@ -33,7 +33,6 @@ import ColorPickerTextEditor from './ColorPickerTextEditor';
 import { insertLink } from '../../utils/link.js';
 import LineHeightDropDown from './LineHeight';
 import { useDebounceFunction } from '../../utils/debounce.js';
-
 const ParentTextEditorWraper = styled.div`
   position: relative;
   display: inline-block;
@@ -381,8 +380,6 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
       changepopUpPosition();
     }
   }, [editTextButton]);
-
-
 
 
   return (

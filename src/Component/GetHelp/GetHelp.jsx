@@ -24,6 +24,7 @@ import {
     EmailText
 } from "./getHelpStyled.js";
 import Text from '../../Element/TextElement/Text.jsx';
+import ImageEditor from '../../CommonComponents/ImageEditor/index.jsx';
 
 
 
@@ -44,58 +45,61 @@ export default function A2ZGuide(props) {
             }
         }
     };
+    const GridLeft = data?.data[0]?.data[0]?.data[0];
+    const GridRight = data?.data[0]?.data[0]?.data[1]
     const style = {
         Container: data?.data[0]?.style,
-        Sidebar: data?.data[0]?.data[0]?.data[0]?.style,
-        SidebarTitle: data?.data[0]?.data[0]?.data[0].data[0],
-        SidebarItem1: data?.data[0]?.data[0]?.data[0].data[1],
-        SidebarItem2: data?.data[0]?.data[0]?.data[0].data[2],
-        SidebarItem3: data?.data[0]?.data[0]?.data[0].data[3],
-        SidebarItem4: data?.data[0]?.data[0]?.data[0].data[4],
-        SidebarItem5: data?.data[0]?.data[0]?.data[0].data[5],
-        ContentWrap: data?.data[0]?.data[0]?.data[1]?.data[0],
-        Title: data?.data[0]?.data[0]?.data[1]?.data[0].data[0],
-        VideoData: data?.data[0]?.data[0]?.data[1]?.data[0].data[1],
-        Section: data?.data[0]?.data[0]?.data[1]?.data[0].data[2],
-        StepTitle1: data?.data[0]?.data[0]?.data[1]?.data[0].data[3],
-        StepDescription1: data?.data[0]?.data[0]?.data[1]?.data[0].data[4],
-        StepTitle2: data?.data[0]?.data[0]?.data[1]?.data[0].data[5],
-        StepDescription2: data?.data[0]?.data[0]?.data[1]?.data[0].data[6],
-        BulletList1: data?.data[0]?.data[0]?.data[1]?.data[0].data[7],
-        BulletItem1: data?.data[0]?.data[0]?.data[1]?.data[0].data[8],
-        BulletItem2: data?.data[0]?.data[0]?.data[1]?.data[0].data[9],
-        BulletItem3: data?.data[0]?.data[0]?.data[1]?.data[0].data[10],
-        StepTitle3: data?.data[0]?.data[0]?.data[1]?.data[0].data[11],
-        StepDescription3: data?.data[0]?.data[0]?.data[1]?.data[0].data[12],
-        BulletList2: data?.data[0]?.data[0]?.data[1]?.data[0].data[13],
-        BulletItem4: data?.data[0]?.data[0]?.data[1]?.data[0].data[14],
-        BulletItem5: data?.data[0]?.data[0]?.data[1]?.data[0].data[15],
-        StepTitle4: data?.data[0]?.data[0]?.data[1]?.data[0].data[16],
-        StepDescription4: data?.data[0]?.data[0]?.data[1]?.data[0].data[17],
-        BulletList3: data?.data[0]?.data[0]?.data[1]?.data[0].data[18],
-        BulletItem6: data?.data[0]?.data[0]?.data[1]?.data[0].data[19],
-        StepTitle5: data?.data[0]?.data[0]?.data[1]?.data[0].data[20],
-        StepDescription5: data?.data[0]?.data[0]?.data[1]?.data[0].data[21],
-        StepTitle6: data?.data[0]?.data[0]?.data[1]?.data[0].data[22],
-        StepDescription6: data?.data[0]?.data[0]?.data[1]?.data[0].data[23],
-        StepTitle7: data?.data[0]?.data[0]?.data[1]?.data[0].data[24],
-        StepDescription7: data?.data[0]?.data[0]?.data[1]?.data[0].data[25],
-        StepDescription8: data?.data[0]?.data[0]?.data[1]?.data[0].data[26],
-        StepTitle8: data?.data[0]?.data[0]?.data[1]?.data[0].data[27],
-        StepDescription10: data?.data[0]?.data[0]?.data[1]?.data[0].data[28],
-        StepDescription9: data?.data[0]?.data[0]?.data[1]?.data[0].data[29],
-        BulletList4: data?.data[0]?.data[0]?.data[1]?.data[0].data[30],
-        BulletItem7: data?.data[0]?.data[0]?.data[1]?.data[0].data[31],
-        BulletItem8: data?.data[0]?.data[0]?.data[1]?.data[0].data[32],
-        HelpBox: data?.data[0]?.data[0]?.data[1]?.data[0].data[33],
-        HelpBoxTitle: data?.data[0]?.data[0]?.data[1]?.data[0].data[34],
-        HelpBoxDesc: data?.data[0]?.data[0]?.data[1]?.data[0].data[35],
-        EmailRow: data?.data[0]?.data[0]?.data[1]?.data[0].data[36],
-        FaEnvelope: data?.data[0]?.data[0]?.data[1]?.data[0].data[37],
-        EmailText: data?.data[0]?.data[0]?.data[1]?.data[0].data[38],
+        Sidebar: GridLeft?.style,
+        SidebarTitle: GridLeft.data[0],
+        SidebarItem1: GridLeft.data[1],
+        SidebarItem2: GridLeft.data[2],
+        SidebarItem3: GridLeft.data[3],
+        SidebarItem4: GridLeft.data[4],
+        SidebarItem5: GridLeft.data[5],
+        ContentWrap: GridRight?.data[0],
+        Title: GridRight?.data[0].custom__section[0],
+        VideoData: GridRight?.data[0].custom__section[1],
+        Section: GridRight?.data[0].custom__section[2],
+        StepTitle1: GridRight?.data[0].custom__section[3],
+        StepDescription1: GridRight?.data[0].custom__section[4],
+        StepTitle2: GridRight?.data[0].custom__section[5],
+        StepDescription2: GridRight?.data[0].custom__section[6],
+        BulletList1: GridRight?.data[0].custom__section[7],
+        BulletItem1: GridRight?.data[0].custom__section[8],
+        BulletItem2: GridRight?.data[0].custom__section[9],
+        BulletItem3: GridRight?.data[0].custom__section[10],
+        StepTitle3: GridRight?.data[0].custom__section[11],
+        StepDescription3: GridRight?.data[0].custom__section[12],
+        BulletList2: GridRight?.data[0].custom__section[13],
+        BulletItem4: GridRight?.data[0].custom__section[14],
+        BulletItem5: GridRight?.data[0].custom__section[15],
+        StepTitle4: GridRight?.data[0].custom__section[16],
+        StepDescription4: GridRight?.data[0].custom__section[17],
+        BulletList3: GridRight?.data[0].custom__section[18],
+        BulletItem6: GridRight?.data[0].custom__section[19],
+        StepTitle5: GridRight?.data[0].custom__section[20],
+        StepDescription5: GridRight?.data[0].custom__section[21],
+        StepTitle6: GridRight?.data[0].custom__section[22],
+        StepDescription6: GridRight?.data[0].custom__section[23],
+        StepTitle7: GridRight?.data[0].custom__section[24],
+        StepDescription7: GridRight?.data[0].custom__section[25],
+        StepDescription8: GridRight?.data[0].custom__section[26],
+        StepTitle8: GridRight?.data[0].custom__section[27],
+        StepDescription10: GridRight?.data[0].custom__section[28],
+        StepDescription9: GridRight?.data[0].custom__section[29],
+        BulletList4: GridRight?.data[0].custom__section[30],
+        BulletItem7: GridRight?.data[0].custom__section[31],
+        BulletItem8: GridRight?.data[0].custom__section[32],
+        HelpBox: GridRight?.data[0].custom__section[33],
+        HelpBoxTitle: GridRight?.data[0].custom__section[34],
+        HelpBoxDesc: GridRight?.data[0].custom__section[35],
+        EmailRow: GridRight?.data[0].custom__section[36],
+        FaEnvelope: GridRight?.data[0].custom__section[37],
+        EmailText: GridRight?.data[0].custom__section[38],
+        videoData: GridRight?.data[0]?.data[0],
     }
     // const DataCheck = data?.data[0]?.data[0]?.data[1].data[0].data[0]
-    console.log(style, "stylestylestyle");
+    console.log(style?.videoData, "stylestylestyle");
 
 
     return (
@@ -112,18 +116,19 @@ export default function A2ZGuide(props) {
             <MainContent>
                 <Text DataCheck={style.Title} />
                 <ContentWrap item={style?.ContentWrap?.style}>
-                    <VideoContainer onClick={handleVideoClick}>
-                        <VideoPlayer
-                            ref={videoRef}
-                            poster="video/video-thumb.png"
-                            preload="metadata"
-                        >
-                            <source src="video/smart-city.mp4" type="video/mp4" />
-                        </VideoPlayer>
-                        {!isPlaying && <VideoOverlay>
-                            <VideoIcon />
-                        </VideoOverlay>}
-                    </VideoContainer>
+                    <ImageEditor>
+                        <VideoContainer onClick={handleVideoClick}>
+                            <VideoPlayer
+                                ref={videoRef}
+                                poster={style?.videoData?.poster}
+                                preload={style?.videoData?.preload} >
+                                <source src={style?.videoData?.sourceSrc} type="video/mp4" />
+                            </VideoPlayer>
+                            {!isPlaying && <VideoOverlay>
+                                <VideoIcon />
+                            </VideoOverlay>}
+                        </VideoContainer>
+                    </ImageEditor>
 
                     <Section item={style?.Section?.style}>
                         <Text DataCheck={style?.StepTitle1} />
