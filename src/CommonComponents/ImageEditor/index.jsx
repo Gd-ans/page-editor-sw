@@ -97,7 +97,7 @@ const ImageEditor = ({ children, index, data }) => {
     });
 
 
-    console.log(data, "ASfsdf")
+    // console.log(data, "ASfsdf")
     return (
         <React.Fragment>
             <MainImageEditor onClick={() => handleSelection()} ref={selectedElementRef}>

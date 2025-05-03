@@ -387,7 +387,7 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     }
   }, [editTextButton]);
 
-  console.log(randomKey, 'Selected Text xIxtem:s', selectedTextItem);
+  // console.log(randomKey, 'Selected Text xIxtem:s', selectedTextItem);
 
   return (
     <>
