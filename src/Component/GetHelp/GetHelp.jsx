@@ -82,7 +82,7 @@ export default function A2ZGuide(props) {
         StepDescription7: data?.data[0]?.data[0]?.data[1]?.data[0].data[25],
         StepDescription8: data?.data[0]?.data[0]?.data[1]?.data[0].data[26],
         StepTitle8: data?.data[0]?.data[0]?.data[1]?.data[0].data[27],
-        StepDescription8: data?.data[0]?.data[0]?.data[1]?.data[0].data[28],
+        StepDescription10: data?.data[0]?.data[0]?.data[1]?.data[0].data[28],
         StepDescription9: data?.data[0]?.data[0]?.data[1]?.data[0].data[29],
         BulletList4: data?.data[0]?.data[0]?.data[1]?.data[0].data[30],
         BulletItem7: data?.data[0]?.data[0]?.data[1]?.data[0].data[31],
@@ -175,7 +175,7 @@ export default function A2ZGuide(props) {
 
                     <Section item={style?.Section?.style}>
                         <Text DataCheck={style?.StepTitle8} />
-                        <Text DataCheck={style?.StepDescription8} />
+                        <Text DataCheck={style?.StepDescription10} />
                         <Text DataCheck={style?.StepDescription9} />
                         <BulletList item={style.BulletList4?.style}>
                             <Text DataCheck={style?.BulletItem7} />
