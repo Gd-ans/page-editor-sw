@@ -30,10 +30,10 @@ import { useSelector } from 'react-redux';
 
 
 export default function A2ZGuide(props) {
-    const selectedTextItem = useSelector((state) => state.selectedText.selectedTextItem);
+    const SelcetedItem = useSelector((state) => state.pageBuilder.SelcetedItem);
 
     // Log or use the selected text item JSON object
-    console.log('Selected Text Item:', selectedTextItem);
+    console.log('Selected Text Item:', SelcetedItem);
     const data = props?.data
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
@@ -101,7 +101,7 @@ export default function A2ZGuide(props) {
         EmailRow: GridRight?.data[0].custom__section[36],
         FaEnvelope: GridRight?.data[0].custom__section[37],
         EmailText: GridRight?.data[0].custom__section[38],
-        videoData: GridRight?.data[0]?.data[0],
+        videoData: GridRight?.data[0]?.data,
     }
     return (
         <Container item={style.Container}>
@@ -117,19 +117,26 @@ export default function A2ZGuide(props) {
             <MainContent>
                 <Text DataCheck={style.Title} />
                 <ContentWrap item={style?.ContentWrap?.style}>
-                    <ImageEditor data={style?.videoData}>
-                        <VideoContainer onClick={handleVideoClick}>
-                            <VideoPlayer
-                                ref={videoRef}
-                                poster={style?.videoData?.poster}
-                                preload={style?.videoData?.preload} >
-                                <source src={style?.videoData?.sourceSrc} type="video/mp4" />
-                            </VideoPlayer>
-                            {!isPlaying && <VideoOverlay>
-                                <VideoIcon />
-                            </VideoOverlay>}
-                        </VideoContainer>
-                    </ImageEditor>
+                    {
+                        style?.videoData?.length ? style?.videoData?.map((elem) => {
+                            return (
+                                <ImageEditor data={elem} key={elem?.id} index={elem?.id}>
+                                    <VideoContainer onClick={handleVideoClick}>
+                                        <VideoPlayer
+                                            ref={videoRef}
+                                            poster={elem?.poster}
+                                            preload={elem?.preload} >
+                                            <source src={elem?.sourceSrc} type="video/mp4" />
+                                        </VideoPlayer>
+                                        {!isPlaying && <VideoOverlay>
+                                            <VideoIcon />
+                                        </VideoOverlay>}
+                                    </VideoContainer>
+                                </ImageEditor>
+                            )
+                        }) : null
+                    }
+
 
                     <Section item={style?.Section?.style}>
                         <Text DataCheck={style?.StepTitle1} />

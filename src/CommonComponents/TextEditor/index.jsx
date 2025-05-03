@@ -32,7 +32,7 @@ import ColorPickerTextEditor from './ColorPickerTextEditor.jsx';
 import { insertLink } from '../../utils/link.js';
 import LineHeightDropDown from './LineHeight.jsx';
 import { useDebounceFunction } from '../../utils/debounce.js';
-import { clearSelectedTextItem, setSelectedTextItem } from '../../store/slices/selectedTextSlice.js';
+import { clearSelcetedItem, setSelcetedItem } from '../../store/slices/pageBuilderSlice.js';
 
 const ParentTextEditorWraper = styled.div`
   position: relative;
@@ -148,7 +148,7 @@ const TextEditorWrapUL = styled.div`
 
 const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, sliderId }) => {
   const dispatch = useDispatch();
-  const selectedTextItem = useSelector((state) => state.selectedText.selectedTextItem);
+  const SelcetedItem = useSelector((state) => state.pageBuilder.SelcetedItem);
 
   // Log or use the selected text item JSON object
 
@@ -219,14 +219,14 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
       }
       setEditTextButton(false);
       // Clear the selected text item from the Redux store
-      dispatch(clearSelectedTextItem());
+      dispatch(clearSelcetedItem());
     }
   });
 
   const handleSelection = () => {
     setSelectedElement(index);
     // Dispatch the JSON data of the selected text item to the Redux store
-    dispatch(setSelectedTextItem(data));
+    dispatch(setSelcetedItem(data));
   };
 
   const renderElement = useCallback((props) => <Element {...props} />, []);
@@ -387,7 +387,7 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     }
   }, [editTextButton]);
 
-  // console.log(randomKey, 'Selected Text xIxtem:s', selectedTextItem);
+  // console.log(randomKey, 'Selected Text xIxtem:s', SelcetedItem);
 
   return (
     <>

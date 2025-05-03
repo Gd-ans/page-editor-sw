@@ -1,10 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import selectedTextReducer from './slices/selectedTextSlice';
+import pageBuilderSlice from './slices/pageBuilderSlice';
 
 
 const store = configureStore({
     reducer: {
-        selectedText: selectedTextReducer,
+        pageBuilder: pageBuilderSlice,
     },
 });
 

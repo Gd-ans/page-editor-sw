@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import styled from 'styled-components';
 import EditMediaPopUp from './EditMediaPopUp/EditMediaPopUp';
 import { useDispatch } from 'react-redux';
-import { clearSelectedTextItem, setSelectedTextItem } from '../../store/slices/selectedTextSlice';
+import { clearSelcetedItem, setSelcetedItem } from '../../store/slices/pageBuilderSlice';
 const MainImageEditor = styled.div`
     position: relative;
     min-width: 1px;
@@ -60,7 +60,7 @@ const BtnEditMedia = styled.button`
 const MainBtnEdit = styled.div`
 position: relative;
 `;
-const ImageEditor = ({ children, index, data }) => {
+const ImageEditor = ({ children, index, data, }) => {
     const dispatch = useDispatch()
     const selectedElementRef = useRef(null)
     const EditMedia = useRef();
@@ -68,7 +68,7 @@ const ImageEditor = ({ children, index, data }) => {
     const [editMedia, setEditMedia] = useState(false);
     const handleSelection = () => {
         setSelectedElement(true)
-        dispatch(setSelectedTextItem(data));
+        dispatch(setSelcetedItem(data));
     }
 
 
@@ -92,27 +92,25 @@ const ImageEditor = ({ children, index, data }) => {
             setSelectedElement('');
             setEditMedia(false);
             // Clear the selected text item from the Redux store
-            dispatch(clearSelectedTextItem());
+            dispatch(clearSelcetedItem());
         }
     });
 
 
-    // console.log(data, "ASfsdf")
+    console.log(index, "ASfsdf")
     return (
-        <React.Fragment>
-            <MainImageEditor onClick={() => handleSelection()} ref={selectedElementRef}>
-                <BtnContainer >
-                    {selectedElement && <MainBtnEdit ref={EditMedia}>
-                        <BtnEditMedia onClick={() => { setEditMedia(!editMedia) }}>Edit Media</BtnEditMedia>
-                        {
-                            editMedia &&
-                            <EditMediaPopUp />
-                        }
-                    </MainBtnEdit>}
-                </BtnContainer>
-                {children}
-            </MainImageEditor>
-        </React.Fragment>
+        <MainImageEditor onClick={() => handleSelection()} ref={selectedElementRef} key={index}>
+            <BtnContainer >
+                {selectedElement && <MainBtnEdit ref={EditMedia}>
+                    <BtnEditMedia onClick={() => { setEditMedia(!editMedia) }}>Edit Media</BtnEditMedia>
+                    {
+                        editMedia &&
+                        <EditMediaPopUp />
+                    }
+                </MainBtnEdit>}
+            </BtnContainer>
+            {children}
+        </MainImageEditor>
     )
 }
 
