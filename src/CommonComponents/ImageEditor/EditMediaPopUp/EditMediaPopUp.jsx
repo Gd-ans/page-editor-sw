@@ -4,6 +4,8 @@ import { styled } from 'styled-components';
 // import AddNewElement from '@/CommonComponents/UploadElements/AddNewElement';
 import { FaVideo } from 'react-icons/fa6';
 import { FiUpload } from 'react-icons/fi';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateData, updatePosterById } from '../../../store/slices/pageBuilderSlice';
 
 const MainEditPopUp = styled.div`
 padding:16px;
@@ -88,6 +90,8 @@ const HiddenFileInput = styled.input`
 `;
 
 const EditMediaPopUp = () => {
+    const pageBuilder = useSelector((state) => state.pageBuilder);
+    const dispatch = useDispatch()
     const ref = useRef();
     const fileInputRef = useRef();
     const videoRef = useRef();
@@ -108,6 +112,8 @@ const EditMediaPopUp = () => {
             const videoURL = URL.createObjectURL(file);
             setVideoSrc(videoURL);
         }
+        dispatch(updatePosterById({ id: 0, sourceSrc: "https://www.w3schools.com/tags/movie.mp4", newPosterUrl: "https://thumbs.dreamstime.com/b/demo-text-businessman-dark-vintage-background-108609906.jpg" }));
+
     };
 
     return (

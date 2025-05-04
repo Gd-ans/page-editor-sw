@@ -29,12 +29,11 @@ import { useSelector } from 'react-redux';
 
 
 
-export default function A2ZGuide(props) {
-    const SelcetedItem = useSelector((state) => state.pageBuilder.SelcetedItem);
+export default function A2ZGuide() {
+    const pageBuilder = useSelector((state) => state.pageBuilder);
 
     // Log or use the selected text item JSON object
-    console.log('Selected Text Item:', SelcetedItem);
-    const data = props?.data
+    const data = pageBuilder
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -103,6 +102,9 @@ export default function A2ZGuide(props) {
         EmailText: GridRight?.data[0].custom__section[38],
         videoData: GridRight?.data[0]?.data,
     }
+    setInterval(() => {
+        console.log(GridRight?.data[0]?.data, "dddddddddddddddddd")
+    }, 5000);
     return (
         <Container item={style.Container}>
             <Sidebar item={style.Sidebar}>
@@ -125,6 +127,7 @@ export default function A2ZGuide(props) {
                                         <VideoPlayer
                                             ref={videoRef}
                                             poster={elem?.poster}
+                                            controls
                                             preload={elem?.preload} >
                                             <source src={elem?.sourceSrc} type="video/mp4" />
                                         </VideoPlayer>

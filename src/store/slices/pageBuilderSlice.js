@@ -1,4 +1,21 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, current } from '@reduxjs/toolkit';
+
+// Utility function to deeply update the data array
+const updateItemInData = (data, selectedItem, newItem) => {
+    // data.map(item => {
+    console.log(data, "asfdsgf")
+    // if (item === selectedItem) {
+    //     return { ...newItem };
+    // }
+    // if (item.data && Array.isArray(item.data)) {
+    //     return {
+    //         ...item,
+    //         data: updateItemInData(item.data, selectedItem, newItem)
+    //     };
+    // }
+    // return item;
+    // });
+};
 
 const pageBuilderSlice = createSlice({
     name: 'pageBuilder',
@@ -3869,7 +3886,7 @@ const pageBuilderSlice = createSlice({
                                                 "src": "video/smart-city.mp4",
                                                 "altText": "video",
                                                 "poster": "video/video-thumb.png",
-                                                "sourceSrc": "video/smart-city.mp4"
+                                                "sourceSrc": "https://youtu.be/EngW7tLk6R8?si=o7pYKyDXEXgeTFHZ"
                                             }
                                         ]
                                     }
@@ -3888,8 +3905,29 @@ const pageBuilderSlice = createSlice({
         clearSelcetedItem(state) {
             state.SelcetedItem = null;
         },
+        updateData: (state, action) => {
+        },
+        updatePosterById(state, action) {
+            const { id, newPosterUrl, sourceSrc } = action.payload;
+
+            // Safer nested access with optional chaining and null checks
+            const items = state.data?.[0]?.data?.[0]?.data?.[1]?.data?.[0]?.data;
+            if (!items) return;
+
+            // Create a new array with the updated item
+            state.data[0].data[0].data[1].data[0].data = items.map(item => {
+                if (item?.id === id) {  // assuming the id is in item.id
+                    return {
+                        ...item,
+                        sourceSrc: sourceSrc,
+                        poster: newPosterUrl
+                    };
+                }
+                return item;
+            });
+        }
     },
 });
 
-export const { setSelcetedItem, clearSelcetedItem } = pageBuilderSlice.actions;
+export const { setSelcetedItem, clearSelcetedItem, updateData, updatePosterById } = pageBuilderSlice.actions;
 export default pageBuilderSlice.reducer;
