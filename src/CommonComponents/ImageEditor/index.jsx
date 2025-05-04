@@ -43,7 +43,7 @@ const BtnContainer = styled.div`
 `;
 const BtnEditMedia = styled.button`
     padding: 7px 17px;
-    background-color: #202020;
+    background-color: #747ED1;
     color: #fff;
     cursor: pointer;
     font-weight: 400;
