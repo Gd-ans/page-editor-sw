@@ -38,9 +38,19 @@ const ParentTextEditorWraper = styled.div`
   position: relative;
   display: inline-block;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  
   &.ActiveEdit {
     border-radius: 4px;
     display: inline-block;
+    border: 2px solid #747ED1;
+    box-shadow: 0 0 10px rgba(116, 126, 209, 0.3);
+  }
+  
+  &:hover {
+    border: 1px solid #747ED1;
+    border-radius: 4px;
   }
 `;
 
@@ -146,7 +156,7 @@ const TextEditorWrapUL = styled.div`
   }
 `;
 
-const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, sliderId }) => {
+const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, sliderId, onClick, onUpdate }) => {
   const dispatch = useDispatch();
   const SelcetedItem = useSelector((state) => state.pageBuilder.SelcetedItem);
 
@@ -227,6 +237,11 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
     setSelectedElement(index);
     // Dispatch the JSON data of the selected text item to the Redux store
     dispatch(setSelcetedItem(data));
+    
+    // Call the onClick prop if provided
+    if (onClick) {
+      onClick();
+    }
   };
 
   const renderElement = useCallback((props) => <Element {...props} />, []);
@@ -291,7 +306,15 @@ const TextEditor = ({ data, index, slider, ContextChange, style, sliderKey, slid
   const handleSave = (MegaValue) => {
     const updatedData = MegaValue ? MegaValue : value;
     // Handle save logic if needed
-    console.log(updatedData, "SAfsdgsg")
+    console.log('🔄 TextEditor handleSave called with:', updatedData);
+    
+    // Call the onUpdate prop if provided
+    if (onUpdate) {
+      console.log('📤 Calling onUpdate with:', updatedData);
+      onUpdate(updatedData);
+    } else {
+      console.log('⚠️ onUpdate prop not provided');
+    }
   };
 
   const LinkSubmit = (action, pathname, urlSlug, email, telnumber, webUrl, file, actionRandom) => {

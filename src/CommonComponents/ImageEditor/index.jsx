@@ -97,7 +97,7 @@ const ImageEditor = ({ children, index, data, }) => {
     });
 
 
-    console.log(index, "ASfsdf")
+    // console.log(index, "ASfsdf")
     return (
         <MainImageEditor onClick={() => handleSelection()} ref={selectedElementRef} key={index}>
             <BtnContainer >

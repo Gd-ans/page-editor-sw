@@ -118,6 +118,8 @@ const Text = ({
   children,
   sliderKey,
   sliderId,
+  onClick,
+  onUpdate,
   ...props
 }) => {
   // console.log(DataCheck, "xdasd")
@@ -143,6 +145,8 @@ const Text = ({
         style={style}
         sliderId={sliderId}
         ContextChange={ContextChange}
+        onClick={onClick}
+        onUpdate={onUpdate}
       ></TextEditorLayout>
       {/* ) : (
         <TextElement

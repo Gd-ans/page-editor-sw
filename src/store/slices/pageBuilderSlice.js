@@ -3906,6 +3906,129 @@ const pageBuilderSlice = createSlice({
             state.SelcetedItem = null;
         },
         updateData: (state, action) => {
+            const { path, newData } = action.payload;
+            
+            // Helper function to safely update nested data (handles both arrays and objects)
+            const updateNestedData = (obj, pathArray, newData, depth = 0) => {
+                if (pathArray.length === 1) {
+                    // Handle array indices
+                    if (!isNaN(pathArray[0])) {
+                        const index = parseInt(pathArray[0]);
+                        
+                        if (Array.isArray(obj) && obj[index] !== undefined) {
+                            const updatedArray = [...obj];
+                            const existingObj = updatedArray[index];
+                            
+                            // If we're updating text data, update the nested text structure
+                            if (newData.data && newData.data.text && existingObj.data && Array.isArray(existingObj.data)) {
+                                const updatedDataArray = existingObj.data.map(item => {
+                                    if (item.type === 'alignLeft' && item.children && Array.isArray(item.children)) {
+                                        return {
+                                            ...item,
+                                            children: item.children.map(child => {
+                                                if (child.type === 'p' && child.children && Array.isArray(child.children)) {
+                                                    return {
+                                                        ...child,
+                                                        children: child.children.map(textChild => {
+                                                            if (textChild.text !== undefined) {
+                                                                return {
+                                                                    ...textChild,
+                                                                    text: newData.data.text
+                                                                };
+                                                            }
+                                                            return textChild;
+                                                        })
+                                                    };
+                                                }
+                                                return child;
+                                            })
+                                        };
+                                    }
+                                    return item;
+                                });
+                                updatedArray[index] = {
+                                    ...existingObj,
+                                    data: updatedDataArray
+                                };
+                            } else if (newData.data && Array.isArray(newData.data)) {
+                                // If newData.data is an array, replace the entire data array
+                                updatedArray[index] = {
+                                    ...existingObj,
+                                    data: newData.data
+                                };
+                            } else {
+                                // Fallback to simple object spread
+                                updatedArray[index] = { ...existingObj, ...newData };
+                            }
+                            
+                            return updatedArray;
+                        }
+                    } else {
+                        // Handle object properties
+                        if (obj && typeof obj === 'object' && obj[pathArray[0]] !== undefined) {
+                            const updatedObj = { ...obj };
+                            
+                            // If we're updating the data property of an object
+                            if (pathArray[0] === 'data' && newData.data && Array.isArray(newData.data)) {
+                                updatedObj[pathArray[0]] = newData.data;
+                            } else if (newData.data && Array.isArray(newData.data)) {
+                                // If newData.data is an array, replace the data property
+                                updatedObj.data = newData.data;
+                            } else if (newData.data && Array.isArray(newData.data)) {
+                                // Special case: if we're at the final object and it has a data property
+                                if (obj.data && Array.isArray(obj.data)) {
+                                    updatedObj.data = newData.data;
+                                } else {
+                                    updatedObj[pathArray[0]] = { ...updatedObj[pathArray[0]], ...newData };
+                                }
+                            } else {
+                                updatedObj[pathArray[0]] = { ...updatedObj[pathArray[0]], ...newData };
+                            }
+                            
+                            return updatedObj;
+                        }
+                    } 
+                    return obj;
+                }
+                
+                const currentKey = pathArray[0];
+                
+                // Handle array indices
+                if (!isNaN(currentKey)) {
+                    const index = parseInt(currentKey);
+                    
+                    if (Array.isArray(obj) && obj[index] !== undefined) {
+                        const updatedChild = updateNestedData(obj[index], pathArray.slice(1), newData, depth + 1);
+                        const updatedArray = [...obj];
+                        updatedArray[index] = updatedChild;
+                        return updatedArray;
+                    }
+                } else {
+                    // Handle object properties
+                    if (obj && typeof obj === 'object' && obj[currentKey] !== undefined) {
+                        const updatedChild = updateNestedData(obj[currentKey], pathArray.slice(1), newData, depth + 1);
+                        const updatedObj = { ...obj, [currentKey]: updatedChild };
+                        return updatedObj;
+                    }
+                }
+                
+                return obj;
+            };
+            
+            // Convert path string to array and update
+            const pathArray = path.split('.');
+            
+            // Handle the case where path starts with 'data' but we're already at the data level
+            let adjustedPathArray = pathArray;
+            if (pathArray[0] === 'data' && Array.isArray(state.data)) {
+                adjustedPathArray = pathArray.slice(1);
+            }
+            
+            // Update the state.data with the new data
+            const updatedData = updateNestedData(state.data, adjustedPathArray, newData);
+            
+            // Force the update by creating a new array reference
+            state.data = updatedData;
         },
         updatePosterById(state, action) {
             const { id, newPosterUrl, sourceSrc } = action.payload;
