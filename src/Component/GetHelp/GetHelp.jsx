@@ -247,8 +247,8 @@ export default function A2ZGuide() {
                         /> */}
                             <Text
                                 DataCheck={style?.StepDescription1}
-                                onClick={() => handleComponentClick('data.0.data.0.data.1.data.0.custom__section.4', style?.StepDescription1)}
-                                onUpdate={(newData) => handleComponentUpdate('data.0.data.0.data.1.data.0.custom__section.4', newData)}
+                                onClick={() => handleComponentClick('data.0.data.0.data.1.data.0.custom__section.3', style?.StepDescription1)}
+                                onUpdate={(newData) => handleComponentUpdate('data.0.data.0.data.1.data.0.custom__section.3', newData)}
                             />
                         </Section>
 
