@@ -95,6 +95,7 @@ export default function A2ZGuide() {
         }
     };
     // Use useMemo to recompute style when data changes
+    console.log(data,"datadatadata")
     const style = React.useMemo(() => {
         const GridLeft = data?.data[0]?.data[0]?.data[0];
         const GridRight = data?.data[0]?.data[0]?.data[1];
@@ -111,37 +112,8 @@ export default function A2ZGuide() {
             ContentWrap: GridRight?.data[0],
             Title: GridRight?.data[0]?.custom__section[0],
             VideoData: GridRight?.data[0]?.custom__section[1],
-            Section: GridRight?.data[0]?.custom__section[2],
-            // StepTitle1: GridRight?.data[0]?.custom__section[3],
-            StepDescription1: GridRight?.data[0]?.custom__section[3],
-            // StepTitle2: GridRight?.data[0]?.custom__section[5],
-            // StepDescription2: GridRight?.data[0]?.custom__section[6],
-            // BulletList1: GridRight?.data[0]?.custom__section[7],
-            // BulletItem1: GridRight?.data[0]?.custom__section[8],
-            // BulletItem2: GridRight?.data[0]?.custom__section[9],
-            // BulletItem3: GridRight?.data[0]?.custom__section[10],
-            // StepTitle3: GridRight?.data[0]?.custom__section[11],
-            // StepDescription3: GridRight?.data[0]?.custom__section[12],
-            // BulletList2: GridRight?.data[0]?.custom__section[13],
-            // BulletItem4: GridRight?.data[0]?.custom__section[14],
-            // BulletItem5: GridRight?.data[0]?.custom__section[15],
-            // StepTitle4: GridRight?.data[0]?.custom__section[16],
-            // StepDescription4: GridRight?.data[0]?.custom__section[17],
-            // BulletList3: GridRight?.data[0]?.custom__section[18],
-            // BulletItem6: GridRight?.data[0]?.custom__section[19],
-            // StepTitle5: GridRight?.data[0]?.custom__section[20],
-            // StepDescription5: GridRight?.data[0]?.custom__section[21],
-            // StepTitle6: GridRight?.data[0]?.custom__section[22],
-            // StepDescription6: GridRight?.data[0]?.custom__section[23],
-            // StepTitle7: GridRight?.data[0]?.custom__section[24],
-            // StepDescription7: GridRight?.data[0]?.custom__section[25],
-            // StepDescription8: GridRight?.data[0]?.custom__section[26],
-            // StepTitle8: GridRight?.data[0]?.custom__section[27],
-            // StepDescription10: GridRight?.data[0]?.custom__section[28],
-            // StepDescription9: GridRight?.data[0]?.custom__section[29],
-            // BulletList4: GridRight?.data[0]?.custom__section[30],
-            // BulletItem7: GridRight?.data[0]?.custom__section[31],
-            // BulletItem8: GridRight?.data[0]?.custom__section[32],
+            Section: GridRight?.data[0]?.custom__section[2], 
+            StepDescription1: GridRight?.data[0]?.custom__section[3], 
             HelpBox: GridRight?.data[0]?.custom__section[4],
             HelpBoxTitle: GridRight?.data[0]?.custom__section[5],
             HelpBoxDesc: GridRight?.data[0]?.custom__section[6],
@@ -150,12 +122,8 @@ export default function A2ZGuide() {
             EmailText: GridRight?.data[0]?.custom__section[9],
             videoData: GridRight?.data[0]?.data,
         };
-    }, [data]); // Recompute when data changes
-    // Debug: Log the current data structure
-    useEffect(() => {
-        // Check the specific path for the title
-        const titlePath = pageBuilder.data?.[0]?.data?.[0]?.data?.[1]?.data?.[0]?.custom__section?.[0];
-    }, [pageBuilder.data, style.Title]);
+    }, [data]); // Recompute when data changes 
+   
     return (
         <>
             {/* Save Button */}
@@ -240,11 +208,7 @@ export default function A2ZGuide() {
 
 
                         <Section item={style?.Section?.style}>
-                            {/* <Text 
-                            DataCheck={style?.StepTitle1} 
-                            onClick={() => handleComponentClick('data.0.data.0.data.1.data.0.custom__section.3', style?.StepTitle1)}
-                            onUpdate={(newData) => handleComponentUpdate('data.0.data.0.data.1.data.0.custom__section.3', newData)}
-                        /> */}
+                          
                             <Text
                                 DataCheck={style?.StepDescription1}
                                 onClick={() => handleComponentClick('data.0.data.0.data.1.data.0.custom__section.3', style?.StepDescription1)}
