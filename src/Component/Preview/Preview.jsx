@@ -3,25 +3,15 @@ import { FaEnvelope } from 'react-icons/fa';
 import {
     Container,
     Sidebar,
-    SidebarTitle,
-    SidebarItem,
     MainContent,
     ContentWrap,
-    Title,
     VideoContainer,
     VideoPlayer,
     VideoOverlay,
     VideoIcon,
     Section,
-    StepTitle,
-    StepDescription,
-    BulletList,
-    BulletItem,
     HelpBox,
-    HelpBoxTitle,
-    HelpBoxText,
     EmailRow,
-    EmailText
 } from "../GetHelp/getHelpStyled.js";
 import PreviewText from './PreviewText.jsx';
 
